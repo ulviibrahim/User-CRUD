@@ -1,0 +1,107 @@
+import * as React from "react"
+export const SearchIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={14}
+    height={14}
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="#8C8C8C"
+      d="M13.213 12.352 9.155 8.294c.63-.814.97-1.81.97-2.857a4.66 4.66 0 0 0-1.373-3.314A4.653 4.653 0 0 0 5.437.75a4.66 4.66 0 0 0-3.314 1.373A4.65 4.65 0 0 0 .75 5.437c0 1.252.49 2.43 1.373 3.315a4.65 4.65 0 0 0 3.314 1.373 4.65 4.65 0 0 0 2.855-.969l4.058 4.056a.129.129 0 0 0 .181 0l.681-.68a.129.129 0 0 0 0-.18Zm-5.3-4.44a3.481 3.481 0 0 1-2.476 1.026 3.481 3.481 0 0 1-2.475-1.026 3.481 3.481 0 0 1-1.025-2.474c0-.935.365-1.815 1.025-2.475a3.481 3.481 0 0 1 2.475-1.026c.935 0 1.815.363 2.475 1.025a3.481 3.481 0 0 1 1.026 2.475c0 .935-.365 1.815-1.026 2.475Z"
+    />
+  </svg>
+)
+
+export const AvatarIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={32}
+    height={32}
+    fill="none"
+    {...props}
+  >
+    <circle cx={16} cy={16} r={15.5} fill="url(#a)" stroke="#D9D9D9" />
+    <defs>
+      <pattern
+        id="a"
+        width={1}
+        height={1}
+        patternContentUnits="objectBoundingBox"
+      >
+        <use xlinkHref="#b" transform="scale(.00365)" />
+      </pattern>
+      <image
+        xlinkHref="data:image/png;base64,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"
+        id="b"
+        width={274}
+        height={274}
+      />
+    </defs>
+  </svg>
+)
+export const UserGroupIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="#002766"
+      d="M20.906 18.094h-1.875v-1.875a.188.188 0 0 0-.187-.188h-1.125a.188.188 0 0 0-.188.188v1.875h-1.875a.188.188 0 0 0-.187.187v1.125c0 .103.084.188.187.188h1.875v1.875c0 .103.085.187.188.187h1.125a.188.188 0 0 0 .187-.187v-1.875h1.875a.188.188 0 0 0 .188-.188v-1.125a.188.188 0 0 0-.188-.187ZM8.754 11.68a5.965 5.965 0 0 1 .068-1.709.189.189 0 0 0-.106-.206 2.962 2.962 0 0 1-.865-.588 2.99 2.99 0 0 1-.907-2.236 2.985 2.985 0 0 1 .851-2.006 2.984 2.984 0 0 1 2.185-.907 2.996 2.996 0 0 1 2.493 1.378.187.187 0 0 0 .218.075 5.814 5.814 0 0 1 1.296-.29.188.188 0 0 0 .148-.272 4.696 4.696 0 0 0-4.118-2.576c-2.597-.04-4.762 2.09-4.762 4.687 0 1.472.677 2.785 1.739 3.645a7.046 7.046 0 0 0-2.028 1.415 6.97 6.97 0 0 0-2.058 4.782.188.188 0 0 0 .188.192H4.41c.1 0 .185-.08.187-.18a5.297 5.297 0 0 1 1.564-3.598 5.29 5.29 0 0 1 2.453-1.4.192.192 0 0 0 .139-.206Zm10.558-.618a4.69 4.69 0 0 0-4.615-4.688c-2.596-.04-4.76 2.09-4.76 4.688 0 1.471.68 2.784 1.74 3.644a7.056 7.056 0 0 0-2.026 1.416A6.97 6.97 0 0 0 7.594 20.9a.188.188 0 0 0 .187.193h1.313c.1 0 .185-.08.187-.18a5.297 5.297 0 0 1 1.563-3.598 5.307 5.307 0 0 1 3.78-1.566 4.688 4.688 0 0 0 4.688-4.688Zm-2.566 2.12a2.978 2.978 0 0 1-2.121.88 2.978 2.978 0 0 1-2.121-.88 2.983 2.983 0 0 1-.88-2.151 3.004 3.004 0 0 1 2.97-2.97 3.017 3.017 0 0 1 2.133.858c.581.57.9 1.332.9 2.143a2.99 2.99 0 0 1-.881 2.12Z"
+    />
+  </svg>
+)
+
+export const MessageIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="#002766"
+      d="M10.875 12a1.125 1.125 0 1 0 2.25 0 1.125 1.125 0 0 0-2.25 0Zm4.688 0a1.125 1.125 0 1 0 2.25 0 1.125 1.125 0 0 0-2.25 0Zm-9.375 0a1.125 1.125 0 1 0 2.25 0 1.125 1.125 0 0 0-2.25 0Zm15.497-4.069A10.503 10.503 0 0 0 12 1.5h-.047A10.475 10.475 0 0 0 1.5 12.05a10.533 10.533 0 0 0 1.125 4.684v3.563a1.078 1.078 0 0 0 1.078 1.078h3.565a10.533 10.533 0 0 0 4.685 1.125h.05c1.403 0 2.765-.272 4.047-.804a10.417 10.417 0 0 0 3.347-2.231 10.475 10.475 0 0 0 3.103-7.418 10.46 10.46 0 0 0-.815-4.116Zm-3.542 10.266A8.673 8.673 0 0 1 12 20.719h-.04a8.75 8.75 0 0 1-4.057-1.02l-.197-.105h-3.3v-3.3l-.105-.197a8.75 8.75 0 0 1-1.02-4.057 8.665 8.665 0 0 1 2.522-6.183 8.653 8.653 0 0 1 6.16-2.576h.04c1.171 0 2.308.228 3.38.678a8.664 8.664 0 0 1 2.788 1.875 8.683 8.683 0 0 1 2.552 6.206 8.685 8.685 0 0 1-2.58 6.157Z"
+    />
+  </svg>
+)
+
+export  const NotificationIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="#fff"
+      d="M19.125 18h-.563v-7.969a6.561 6.561 0 0 0-5.625-6.494v-.912a.937.937 0 1 0-1.874 0v.912a6.561 6.561 0 0 0-5.626 6.494V18h-.562a.75.75 0 0 0-.75.75v.75c0 .103.084.188.188.188h5.062A2.627 2.627 0 0 0 12 22.313a2.627 2.627 0 0 0 2.625-2.625h5.063a.188.188 0 0 0 .187-.188v-.75a.75.75 0 0 0-.75-.75ZM12 20.813a1.125 1.125 0 0 1-1.125-1.125h2.25c0 .62-.504 1.125-1.125 1.125ZM7.125 18v-7.969c0-1.303.506-2.526 1.427-3.447A4.841 4.841 0 0 1 12 5.156c1.303 0 2.527.506 3.448 1.428a4.842 4.842 0 0 1 1.427 3.447V18h-9.75Z"
+    />
+  </svg>
+)
+
+export const InfoIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="#002766"
+      d="M12 1.5C6.202 1.5 1.5 6.202 1.5 12S6.202 22.5 12 22.5 22.5 17.798 22.5 12 17.798 1.5 12 1.5Zm0 19.219A8.72 8.72 0 0 1 3.281 12 8.72 8.72 0 0 1 12 3.281 8.72 8.72 0 0 1 20.719 12 8.72 8.72 0 0 1 12 20.719Z"
+    />
+    <path
+      fill="#002766"
+      d="M10.875 7.875a1.125 1.125 0 1 0 2.25 0 1.125 1.125 0 0 0-2.25 0Zm1.688 2.625h-1.126a.188.188 0 0 0-.187.188v6.374c0 .104.084.188.188.188h1.124a.188.188 0 0 0 .188-.188v-6.375a.188.188 0 0 0-.188-.187Z"
+    />
+  </svg>
+)

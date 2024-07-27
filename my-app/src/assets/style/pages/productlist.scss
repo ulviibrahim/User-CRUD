@@ -1,0 +1,48 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {
+    background-color: #ddd;
+  cursor: pointer;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .create-btn{
+    margin: 50px !important;
+    text-align: center;
+    width: 90%;
+    padding: 25px !important;
+}
+
+.btn-group{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .delete{
+    background-color: red;
+  }
+  .see{
+    background-color: green($color: #07662f);
+  }
+  .update{
+    background-color: #04AA6D !important;
+  }
+}

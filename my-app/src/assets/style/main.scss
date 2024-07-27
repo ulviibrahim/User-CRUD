@@ -1,0 +1,9 @@
+@import './base/base.scss';
+
+// components
+@import './components/header.scss';
+@import './components/input.scss';
+@import 'sweetalert2/src/sweetalert2.scss';
+
+// pages
+@import './pages/productlist.scss'
